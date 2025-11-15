@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import cv2
 from PIL import Image, ImageOps, ImageFilter
 import tensorflow as tf
 from mtcnn import MTCNN
@@ -134,3 +133,4 @@ if uploaded:
             st.subheader("Recommended Foods")
             for food in RECOMMEND[label]:
                 st.write(f"✔ {food}")
+
